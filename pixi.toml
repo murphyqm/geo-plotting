@@ -1,0 +1,18 @@
+[project]
+authors = ["Maeve Murphy Quinlan <earmmu@leeds.ac.uk>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "geo-plotting"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+dash = ">=2.18.2,<3"
+plotly = ">=6.0.0,<7"
+geopandas = ">=1.0.1,<2"
+pandas = ">=2.2.3,<3"
+quarto = ">=1.6.40,<2"
+numpy = ">=2.0.2,<3"
+jupyter = ">=1.1.1,<2"
