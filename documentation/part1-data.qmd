@@ -1,0 +1,18 @@
+---
+title: 1. Data
+---
+
+All data analysis should be done in a dedicated version controlled repository.
+
+It is oftentimes a good idea (if the data is open) to save this as a public repository, and in your visualisation/dashboard repository, simply point to the URL of this data.
+
+Exploration and analysis of the data should be kept separate from the communication and visualisation of the data; this ensures your dashboard is useful and clear for the users.
+
+:::{.callout-note title="Action: save resulting data in a clean format"}
+
+Your cleaned and analysed datasets should be saved in a common data format (for example, `geojson`) in a repository that also tracks the cleaning and analysis steps (for example, in a git repository).
+
+This dataset can have a DOI minted and citation metadata added.
+
+Any future updates or edits to the dataset will be obvious and visible, supporting open research and reproducibility.
+:::

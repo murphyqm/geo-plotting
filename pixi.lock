@@ -54,6 +54,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/fqdn-1.5.1-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/freetype-2.12.1-h267a509_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/freexl-2.0.0-h9dce30a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/geojson-3.2.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/geopandas-1.0.1-pyhd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/geopandas-base-1.0.1-pyha770c72_3.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/geos-3.13.0-h5888daf_0.conda
@@ -61,6 +62,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/h11-0.14.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/h2-4.2.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/h3-4.2.0-h5888daf_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/h3-py-4.2.1-py39hf88036b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/hpack-4.1.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/httpcore-1.0.7-pyh29332c3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/httpx-0.28.1-pyhd8ed1ab_0.conda
@@ -1099,6 +1102,21 @@ packages:
   size: 59299
   timestamp: 1734014884486
 - kind: conda
+  name: geojson
+  version: 3.2.0
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/geojson-3.2.0-pyhd8ed1ab_0.conda
+  sha256: bfa3b5159e6696872586b2154ff9956e7e81d86d85a6a5601d25b26ca2bb916d
+  md5: 9f9840fb1c2e009fb0009a2f9461e64a
+  depends:
+  - python >=3.9
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 18963
+  timestamp: 1734884985416
+- kind: conda
   name: geopandas
   version: 1.0.1
   build: pyhd8ed1ab_3
@@ -1226,6 +1244,42 @@ packages:
   license_family: MIT
   size: 53888
   timestamp: 1738578623567
+- kind: conda
+  name: h3
+  version: 4.2.0
+  build: h5888daf_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/h3-4.2.0-h5888daf_0.conda
+  sha256: edd60f180ce4e44d0e6bc2c1888851ffa3b1f617dc69cae68330aa38b2f6bcda
+  md5: ca6ad4c9af0ac2621836123e87a28d0c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - libstdcxx >=13
+  license: Apache-2.0
+  license_family: Apache
+  size: 122546
+  timestamp: 1733438380937
+- kind: conda
+  name: h3-py
+  version: 4.2.1
+  build: py39hf88036b_1
+  build_number: 1
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/h3-py-4.2.1-py39hf88036b_1.conda
+  sha256: 0240072ac8ca7b25fbd582c6a8bfabdfdcb3ff0c2e989d85fa0ba0d4873da833
+  md5: 1e8b1be12259b7c4075cf0a0c40da877
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - libstdcxx >=13
+  - numpy
+  - python >=3.9,<3.10.0a0
+  - python_abi 3.9.* *_cp39
+  license: Apache-2.0
+  license_family: Apache
+  size: 482125
+  timestamp: 1738526094062
 - kind: conda
   name: hpack
   version: 4.1.0

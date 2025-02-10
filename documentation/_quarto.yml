@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Dashboard Step by Step"
+  navbar:
+    left:
+      - part1-data.qmd
+      - part2-plotting.qmd
+      - part3-dashboard.qmd
+      - part4-hosting.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+
+

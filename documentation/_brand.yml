@@ -1,0 +1,35 @@
+color:
+  palette:
+    navy: "#24226F"
+    grey: "#B8BCD1"
+    green: "#03CEA3"
+    orange: "#FF8F42"
+    light-grey: "#E2E5F3"
+    blue: "#1877CF"
+    dark-grey: "#8C91A8"
+    white: "#FFFFFF"
+  background: white
+  foreground: navy
+  primary: blue
+
+typography:
+  fonts:
+    - family: Alegreya
+      source: google
+    - family: Figtree
+      source: google
+    - family: Space Mono
+      source: google
+  base: Figtree
+  headings:
+    family: Figtree
+    weight: 600
+    color: navy
+  link:
+    decoration: underline
+  monospace: Space Mono
+  monospace-inline:
+    color: navy
+    background-color: light-grey # or use a named color from `color`
+  monospace-block: 
+    background-color: light-grey

@@ -1,0 +1,5 @@
+---
+title: "Dashboard Step by Step"
+---
+
+This document lays out some very basic steps to simplify the process of building a Python-based dashboard to present the results of a research project.
